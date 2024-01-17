@@ -1,5 +1,7 @@
 const Candy = require('./candy');
-const ShoppingBasket = require('./shoppingBasket');
+const ShoppingBasket = require('./shopping_basket');
+
+jest.mock("./Trainer");
 
 
 describe('candy', () => {

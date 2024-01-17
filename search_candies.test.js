@@ -1,4 +1,4 @@
-const searchCandies = require('./searchCandies');
+const searchCandies = require('./search_candies');
 
 describe('searchCandies', () => {
     it('runs searchCandies with "Ma" & 10', () => {
