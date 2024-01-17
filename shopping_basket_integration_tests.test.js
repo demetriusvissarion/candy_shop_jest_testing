@@ -1,8 +1,8 @@
 const Candy = require('./candy');
-const ShoppingBasket = require('./shoppingBasket');
+const ShoppingBasket = require('./shopping_basket');
 
 
-describe('candy', () => {
+describe('Integration tests for the ShoppingBasket', () => {
     beforeEach(() => {
         // Before each test, reset
     });
@@ -19,7 +19,7 @@ describe('candy', () => {
         expect(basket.getTotalPrice()).toEqual(4.99);
     });
 
-    it('returns the TotalPrice when basket has one item at 4.99', () => {
+    it('returns the TotalPrice when basket has multiple items', () => {
         const basket = new ShoppingBasket();
         const candy = new Candy('Mars', 4.99);
         basket.addItem(candy);
